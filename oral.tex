@@ -15,75 +15,99 @@
 \maketitle
 
 
-\section{Introduction}
-The modern study of cosmology began with Einstein's publication of the general
-theory of Relativity in 1915 \cite{cite:Einstein} and the development of the
-Einstein field equations. In 1922 Friedmann\cite{cite:Friedmann} - assuming a homogeneous, isotropic
-universe - constructed a solution to Einstein's field equation that serve as
-the basis for the standard model of cosmology. In the
-1930s, observations by Hubble \cite{cite:Hubble} showing the expansion of the
-universe provided the first evidence of the big bang. In 1965 Penzias and
-Wilson\cite{cite:Penzias} provided further evidence for a big bang origin with the discovery of
-the Cosmic Microwave Background. Further observations of
-the universe showed near complete flatness and uniformity on scales exceeding the
-particle horizon. Then in 1981 Guth\cite{cite:Guth} suggested that a brief period of exponential
-expansion now known as inflation could resolve these issues.
 
-\subsection{History of the CMB}
-The BICEP and Keck experiments observe the Cosmic Microwave Background (CMB)
-which originates from photons in the early universe. In the hot big bang, the
+\section{Introduction}
+
+\subsection{A Brief History of Inflation}
+The modern study of cosmology began in 1915 with Einstein's development of the general
+theory of Relativity \cite{cite:Einstein}. By combining the Einstein Field
+Equations with the assumptions of a homogeneous and isotropic universe,
+Friedmann developed a cosmological model which forms the core of the standard
+model of cosmology\cite{cite:Friedmann}. Hubble's observations in the 1930s
+showed an expanding universe\cite{cite:Hubble} providing the first evidence
+for a Big Bang origin. This was further supported by the detection of the
+Cosmic Microwave Background by Penzias and Wilson in 1965\cite{cite:Penzias}.
+
+
+Increasing experimental precision revealed a uniform CMB and isotropic
+universe on scales exceeding the size of the horizon predicted by
+Friedmann cosmological models. In 1981 Guth suggested a small period of
+exponential expansion to solve these two problems. This theory of inflation
+has since seen further success in explaining the growth of cosmic structures
+and the lack of observed magnetic monopoles but has been criticized due to its
+need for fine-tuned initial conditions.
+
+
+\subsection{Origins of the CMB}
+One of the most successful predictions of inflation is the presence of a near
+uniform isotropic photon source known as the Cosmic Microwave Background
+(CMB).The CMB has the near uniform temperature spectrum of a 2.73K blackbody
+and is the source of the oldest photons in the universe. In the hot big bang, the
 early universe was an energetic plasma in which photons scattered continuously
 from free protons and electrons which prevented propagation over large
 distances. As the universe expanded, the temperature of this plasma decreased
 adiabatically until the free electrons and protons could combine to form
 neutral Hydrogen. After this era of recombination about 380,000 years after
 the big bang, the photons decoupled from the plasma and began free streaming
-through the universe in the direction of their last scattering. We observe
+through the universe, redshifting due to continued expansion. We observe
 these photons as a 2D "surface of last scattering". 
-\\
+
+\section{Science with the CMB}
+
+\subsection{Mapping the CMB}
+Precision cosmology experiments have shown that the CMB is not truly uniform.
 Results from COBE in 1992\cite{cite:COBE} showed the CMB to have a nearly
-isotropic temperature spectrum corresponding to a 2.73K blackbody with
-fluctuations on the order of 10 $\mu$K corresponding to density perturbations.
-The CMB photons carry additional information besides the temperature spectrum
-in the form of their polarization the first signs of which were detected by
-DASI\cite{cite:DASI} in 2002. This majority of the polarization signal comes
-from Thompson scattering in the inhomogeneous temperature field of the early
-universe. However, an inflationary epoch would produce its own polarization
-signal due to the generation of gravitational waves. The search for this
-inflationary gravitational wave (IGW) signal is the ongoing target for the
-Bicep and Keck program.
+isotropic temperature spectrum corresponding to a 2.73K blackbody but with
+fluctuations on the order of 10 $\mu$K. We examine these temperature
+perturbations with the spherical harmonics:
 
-
-\section{Anisotropies in the CMB}
-The near-uniform temperature spectrum of the CMB contains faint temperature
-anisotropies on the order of 1 part in $10^5$. These temperature anisotropies
-are largely due to - Gaussian distributed - density fluctuations at
-recombination. Although we cannot predict the locations or magnitudes of these
-fluctuations we can examine their statistical properties by decomposition with
-the spherical harmonics:
 
 \begin{equation}
 	\delta T(\theta,\phi) = \sum _{m=-\ell} ^\ell \sum _{\ell=0} ^\infty
 	a_{\ell m}Y_{\ell m}(\theta,\phi)
 \end{equation}
 
+
 Although this decomposition is a powerful tool, the universe is isotropic only
 in a statistical sense and we therefore cannot predict any individual $a_{\ell
 m}$. We instead take an average over $m$ for a given $\ell$ to form the
 angular power spectrum:
 
-
 \begin{equation}
-	C_\ell = \frac{1}{2\ell +1}\sum _{m=-\ell} ^\ell \left< |a_{\ell m}|^2
+	C_{ii_\ell} = \frac{1}{2\ell +1}\sum _{m=-\ell} ^\ell \left< |a_{\ell m}|^2
 	\right>
 \end{equation}
 
-This angular power spectrum describes the relative power of features in the
-CMB according to their angular size with higher $\ell$ corresponding to
-smaller features. $\lambda$
+where $ii$ refers to the type of anisotropy.
+
+\subsection{Polarization Anisotropies}
+In addition to the temperature anisotropies CMB photons are partially
+polarized due to Thompson scattering in a non-uniform temperature field. This
+CMB polarization was predicted at the $\approx 10\%$ level by Bond et al
+\cite{cite:Bond} and first detected by DASI in 2002 \cite{cite:DASI}. Polnarev
+\cite{cite:Polnarev} realized that an inflationary period would imprint an
+additional polarization signal on the CMB due to the production of
+gravitational waves. 
+
+This inflationary gravitational wave (IGW) signal is expected to be orders of
+magnitude fainter than the signal due to Thompson scattering and difficult to
+separate in the Stokes parameter space conventionally used in
+Electromagnetics when studying linearly polarized light. It was shown by Kamionkowski et al
+\cite{cite:Kamionkowski} that the polarization could instead be parameterized
+by a gradient (E-mode) and curl (B-mode) component. The signal
+produced by Thompson scattering occurs in the presence of a temperature
+quadrupole and follows the temperature gradients of the hot plasma at
+recombination and can therefore produce only E-modes. The tensor perturbations
+due to passing gravitational waves are not restricted in this way and can thus
+generate both E and B modes. The signal produced by these two methods is characterised by the
+tensor to scalar ration $r$. Figure \ref{fig:theory_aps} shows the theoretical
+power spectra of CMB perturbations in the $\Lambda$CDM standard model of
+Cosmology with the addition of an $r=0.1$ IGW B-mode signal.
+
 
 \begin{figure}
-	\includegraphics[width=\textwidth]{theory_aps.pdf}
+	\center
+	\includegraphics[width=.8\textwidth]{theory_aps.pdf}
 	\caption{The CMB power spectrum of the $\Lambda$CDM standard model of
 	cosmology as calculated by CAMB using parameters from Planck 2013. The
 	temperature anisotropies (black) contain orders of magnitude more power
@@ -96,29 +120,10 @@ smaller features. $\lambda$
 
 
 
-\subsection{Polarization Anisotropies}
-\indent In addition to the temperature anisotropies that correspond to primordial
-density perturbations, CMB photons are partially polarized due to Thompson
-scattering in a non-uniform temperature field. This CMB polarization was predicted
-at the $\approx 10\%$ level by Bond et al \cite{cite:Bond} and first detected
-by DASI in 2002 \cite{cite:DASI}. Polnarev \cite{cite:Polnarev} realized that an inflationary
-period would imprint an additional polarization signal on the CMB due to the
-production of gravitational waves. \\
-\indent This inflationary gravitational wave (IGW) signal is expected to be orders of
-magnitude fainter than the signal due to Thompson scattering and difficult to
-separate in the Stokes parameter space conventionally used in
-Electromagnetics when studying linearly polarized light. CMB polarization
-studies follow the procedures outlined in Kamionkowski et al
-\cite{cite:Kamionkowski} which separates the polarization signal into a
-gradient (E-mode) and curl (B-mode) component. The polarization signal
-produced by Thompson scattering occurs in the presence of a temperature
-quadrupole and follows the temperature gradients of the hot plasma at
-recombination while the IGW signal is not restricted in this way. Thompson
-scattering can therefore produce only E-modes while IGWs can produce both E
-and B modes. The signal produced by these two methods is characterised by the
-tensor to scalar ration $r$. Figure \ref{fig:theory_aps} shows the theoretical power spectra
-of CMB perturbations in the $\Lambda$CDM standard model of Cosmology with the
-addition of an $r=0.1$ IGW B-mode signal.
+\subsection{Science with the CMB Power Spectrum}
+
+
+
 
 \section{The Bicep and Keck Program}
 The Bicep/Keck experiments are a staged series of small aperture ground based
@@ -202,7 +207,8 @@ multiple frequencies, the Keck array has further constrained these dust
 emissions as well as emissions due to galactic synchrotron as shown in Figure
 \ref{fig:noilev}.
 \begin{figure}
-	\includegraphics[width=\textwidth]{noilev.pdf}
+	\center
+	\includegraphics[width=.8\textwidth]{noilev_bk15.pdf}
 	\caption{}
 	\label{fig:noilev}
 \end{figure}

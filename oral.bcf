@@ -2053,18 +2053,16 @@
     <bcf:citekey order="2">cite:Friedmann</bcf:citekey>
     <bcf:citekey order="3">cite:Hubble</bcf:citekey>
     <bcf:citekey order="4">cite:Penzias</bcf:citekey>
-    <bcf:citekey order="5">cite:Guth</bcf:citekey>
-    <bcf:citekey order="6">cite:COBE</bcf:citekey>
+    <bcf:citekey order="5">cite:COBE</bcf:citekey>
+    <bcf:citekey order="6">cite:Bond</bcf:citekey>
     <bcf:citekey order="7">cite:DASI</bcf:citekey>
-    <bcf:citekey order="8">cite:Bond</bcf:citekey>
-    <bcf:citekey order="9">cite:DASI</bcf:citekey>
-    <bcf:citekey order="10">cite:Polnarev</bcf:citekey>
-    <bcf:citekey order="11">cite:Kamionkowski</bcf:citekey>
-    <bcf:citekey order="12">cite:Bicep1</bcf:citekey>
-    <bcf:citekey order="13">cite:BK1</bcf:citekey>
-    <bcf:citekey order="14">cite:PlanckXIX</bcf:citekey>
-    <bcf:citekey order="15">cite:BKP</bcf:citekey>
-    <bcf:citekey order="16">cite:PlanckXXII</bcf:citekey>
+    <bcf:citekey order="8">cite:Polnarev</bcf:citekey>
+    <bcf:citekey order="9">cite:Kamionkowski</bcf:citekey>
+    <bcf:citekey order="10">cite:Bicep1</bcf:citekey>
+    <bcf:citekey order="11">cite:BK1</bcf:citekey>
+    <bcf:citekey order="12">cite:PlanckXIX</bcf:citekey>
+    <bcf:citekey order="13">cite:BKP</bcf:citekey>
+    <bcf:citekey order="14">cite:PlanckXXII</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nyt/global" type="entry" sortscheme="nyt" sortnamekeyscheme="global">
   <bcf:sorting>

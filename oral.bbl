@@ -744,31 +744,6 @@
       \verb 10.1007/BF01332580
       \endverb
     \endentry
-    \entry{cite:Guth}{article}{}
-      \name{author}{1}{}{%
-        {{hash=a4274467a0f4d9ae03d9ad997b0449bd}{%
-           family={{Guth}},
-           family_i={G\bibinitperiod},
-           given={A.\bibnamedelimi H.},
-           given_i={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-      }
-      \strng{namehash}{a4274467a0f4d9ae03d9ad997b0449bd}
-      \strng{fullhash}{a4274467a0f4d9ae03d9ad997b0449bd}
-      \field{sortinit}{G}
-      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{prd}
-      \field{month}{01}
-      \field{title}{{Inflationary universe: A possible solution to the horizon and flatness problems}}
-      \field{volume}{23}
-      \field{year}{1981}
-      \field{pages}{347\bibrangedash 356}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1103/PhysRevD.23.347
-      \endverb
-    \endentry
     \entry{cite:Hubble}{article}{}
       \name{author}{1}{}{%
         {{hash=e7715514556135fc9cec61ff1ef51dd8}{%
