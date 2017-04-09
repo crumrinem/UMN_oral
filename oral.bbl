@@ -744,6 +744,137 @@
       \verb 10.1007/BF01332580
       \endverb
     \endentry
+    \entry{cite:WMAP9}{article}{}
+      \name{author}{21}{}{%
+        {{hash=89fa006e81eb7b5cf00116d75df146b2}{%
+           family={{Hinshaw}},
+           family_i={H\bibinitperiod},
+           given={G.},
+           given_i={G\bibinitperiod}}}%
+        {{hash=103f4ea10eeafa3a23f78aa11c6f393e}{%
+           family={{Larson}},
+           family_i={L\bibinitperiod},
+           given={D.},
+           given_i={D\bibinitperiod}}}%
+        {{hash=435ee8e619788ff24c5cb45d24e57203}{%
+           family={{Komatsu}},
+           family_i={K\bibinitperiod},
+           given={E.},
+           given_i={E\bibinitperiod}}}%
+        {{hash=812a508994bce34e17030cb620acf117}{%
+           family={{Spergel}},
+           family_i={S\bibinitperiod},
+           given={D.\bibnamedelimi N.},
+           given_i={D\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=e955fb66394544670b323e0a1cf95e2a}{%
+           family={{Bennett}},
+           family_i={B\bibinitperiod},
+           given={C.\bibnamedelimi L.},
+           given_i={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=732cb48e4bb9523cf6501cccb8da231e}{%
+           family={{Dunkley}},
+           family_i={D\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=79afc0ccbbb247276e07b5ff867a6ef7}{%
+           family={{Nolta}},
+           family_i={N\bibinitperiod},
+           given={M.\bibnamedelimi R.},
+           given_i={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=ec1b7f4c288ef3e190d721efab74802f}{%
+           family={{Halpern}},
+           family_i={H\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=847a2d527203982d326f695ee13c9fc1}{%
+           family={{Hill}},
+           family_i={H\bibinitperiod},
+           given={R.\bibnamedelimi S.},
+           given_i={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=2c4bd33469b1b4e62b4950ed62ab3592}{%
+           family={{Odegard}},
+           family_i={O\bibinitperiod},
+           given={N.},
+           given_i={N\bibinitperiod}}}%
+        {{hash=1a508e6412334a77852e57d6b7203aeb}{%
+           family={{Page}},
+           family_i={P\bibinitperiod},
+           given={L.},
+           given_i={L\bibinitperiod}}}%
+        {{hash=daca99e7be4f3558c02a401c31879ff6}{%
+           family={{Smith}},
+           family_i={S\bibinitperiod},
+           given={K.\bibnamedelimi M.},
+           given_i={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=963ff5c42d06daf1805bfd9aeb024d5e}{%
+           family={{Weiland}},
+           family_i={W\bibinitperiod},
+           given={J.\bibnamedelimi L.},
+           given_i={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=430846ca12d6a6bb6d019aab40d15924}{%
+           family={{Gold}},
+           family_i={G\bibinitperiod},
+           given={B.},
+           given_i={B\bibinitperiod}}}%
+        {{hash=18425adefa43bddaa8222db26081db96}{%
+           family={{Jarosik}},
+           family_i={J\bibinitperiod},
+           given={N.},
+           given_i={N\bibinitperiod}}}%
+        {{hash=4bd5396b9e598f87b8b555442ba35029}{%
+           family={{Kogut}},
+           family_i={K\bibinitperiod},
+           given={A.},
+           given_i={A\bibinitperiod}}}%
+        {{hash=cab2453dd7ea5a447cf1a387401965a4}{%
+           family={{Limon}},
+           family_i={L\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=a1099582074a7f3fd1cb10ad8891d149}{%
+           family={{Meyer}},
+           family_i={M\bibinitperiod},
+           given={S.\bibnamedelimi S.},
+           given_i={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=93cec251e6588bf207d77f62fac372e8}{%
+           family={{Tucker}},
+           family_i={T\bibinitperiod},
+           given={G.\bibnamedelimi S.},
+           given_i={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=9da547cf4a14fe27cbaec62412d2b880}{%
+           family={{Wollack}},
+           family_i={W\bibinitperiod},
+           given={E.},
+           given_i={E\bibinitperiod}}}%
+        {{hash=764ac83251fc11b74701c207b99de45b}{%
+           family={{Wright}},
+           family_i={W\bibinitperiod},
+           given={E.\bibnamedelimi L.},
+           given_i={E\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{d8df5ff05b2ccfbdf557e9e1c0496780}
+      \strng{fullhash}{6a09d99cb67b2a6fe2da70caa89d52dc}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{19}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{apjs}
+      \field{month}{10}
+      \field{title}{{Nine-year Wilkinson Microwave Anisotropy Probe (WMAP) Observations: Cosmological Parameter Results}}
+      \field{volume}{208}
+      \field{year}{2013}
+      \field{pages}{19}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0067-0049/208/2/19
+      \endverb
+      \verb{eprint}
+      \verb 1212.5226
+      \endverb
+      \keyw{cosmic background radiation,cosmology: observations,dark matter,early universe,instrumentation: detectors,space vehicles,space vehicles: instruments,telescopes}
+    \endentry
     \entry{cite:Hubble}{article}{}
       \name{author}{1}{}{%
         {{hash=e7715514556135fc9cec61ff1ef51dd8}{%

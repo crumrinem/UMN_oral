@@ -4,6 +4,7 @@
 \usepackage{amsfonts}
 \usepackage{subfigure}
 \usepackage{fullpage}
+\usepackage{footnote}
 \usepackage[backend=biber, sorting=nyt]{biblatex}
 \bibliography{oralrefs}
 \usepackage{setspace}
@@ -74,11 +75,77 @@ m}$. We instead take an average over $m$ for a given $\ell$ to form the
 angular power spectrum:
 
 \begin{equation}
-	C_{ii_\ell} = \frac{1}{2\ell +1}\sum _{m=-\ell} ^\ell \left< |a_{\ell m}|^2
+	C_{\ell} = \frac{1}{2\ell +1}\sum _{m=-\ell} ^\ell \left< |a_{\ell m}|^2
 	\right>
 \end{equation}
 
-where $ii$ refers to the type of anisotropy.
+
+The temperature power spectrum shown in Figure \ref{fig:temp_aps} contains
+much of the information concerning the geometry, evolution, and composition of
+our universe. The simple $\Lambda$CDM model is based on the six parameters
+shown in Table \ref{table:lcdm6par}. 
+\begin{figure}
+	\center
+	\includegraphics[width=\textwidth]{temp_aps.pdf}
+	\caption{The temperature power spectrum of the CMB. The primary and
+	acoustic peaks can be used to constrain cosmological parameters that
+	describe the geometry, evolution and composition of our universe.}
+	\label{fig:temp_aps}
+
+\end{figure}
+
+\subsection{The 6 Parameter Model}
+
+\begin{table}
+	\center
+\begin{tabular}{|l|l|l|}
+	\hline
+	Parameter & Symbol & Value \\ \hline \hline
+	Baryon Density & $h^2\Omega _b$ &  $0.02240$\\ \hline
+	Cold Dark Matter Density & $h^2\Omega _m$ & $0.1146$ \\ \hline
+	Dark Energy Density ($w=-1$) & $\Omega _\Lambda$ & $0.7181$ \\ \hline
+	Scalar Spectral Index & $n_s$ & $0.9646$ \\ \hline
+	Curvature Fluctuation Amplitude $k_0=0.002$ & $\Delta _\mathcal{R} ^2$ & $2.43
+	\times 10^{-9}$\\ \hline
+	Reionization Optical Depth & $\tau$ & $0.0800$\\ \hline
+\end{tabular}
+	\caption{The six parameters in the simple $\Lambda$CDM
+	cosmological model as shown in the WMAP 9 year results\cite{cite:WMAP9}}
+	\label{table:lcdm6par}
+\end{table}
+
+The first three parameters in Table \ref{table:lcdm6par} - $h^2\Omega_b$, $h^2\Omega _c$, and $\Omega
+_\Lambda$ - describe relative contribution to the composition of our universe
+from baryons, cold dark matter, and dark energy respectively. The matter to
+baryon ratio is related to the size of the first three peaks of the
+Temperature power spectrum in Figure \ref{fig:temp_aps}. The scalar spectral
+index $n_s$ measures the deviation of the power spectrum from the
+scale-invariant case.  The curvature fluctuation amplitude $\Delta
+_\mathcal{R} ^2$ is a
+measure of curvature fluctuation at different angular scales. Finally, the
+reionization optical depth can be used to estimate the damping of CMB
+fluctuations due to the reionization of cosmic baryons which turns the
+universe more opaque for CMB photons.
+%WMAP 5yr paper has information on these parameters, so does Dark Universe
+
+These 6 parameters are largely degenerate with each other in CMB studies
+alone. To break the degeneracies, CMB data is often combined with data from
+other cosmological studies which can set constraints independent of the CMB.
+Studies of Type Ia supernovae use well characterized spectral emissions to create a
+cosmic distance ladder which can constrain the Hubble constant and place
+independent constraints on the composition of the universe. An independent
+measure of these parameters can be made by studying Baryon Acoustic
+Oscillations. The attraction of matter by a primordial overdensity leads to
+increased heat and a large outward pressure. These pressure waves of baryons
+were left behind at fixed radii after photon decoupling leaving a large
+overdensity at the sound horizon. By comparing the overdensities in the CMB
+with the distribution of modern galaxies, BAO places constraints on cosmic
+expansion independent from those set by CMB or supernovae studies.
+
+
+
+
+
 
 \subsection{Polarization Anisotropies}
 In addition to the temperature anisotropies CMB photons are partially
@@ -91,18 +158,23 @@ gravitational waves.
 
 This inflationary gravitational wave (IGW) signal is expected to be orders of
 magnitude fainter than the signal due to Thompson scattering and difficult to
-separate in the Stokes parameter space conventionally used in
-Electromagnetics when studying linearly polarized light. It was shown by Kamionkowski et al
+separate in the Stokes parameter space conventionally used when studying
+linearly polarized light. It was shown by Kamionkowski et al
 \cite{cite:Kamionkowski} that the polarization could instead be parameterized
-by a gradient (E-mode) and curl (B-mode) component. The signal
-produced by Thompson scattering occurs in the presence of a temperature
-quadrupole and follows the temperature gradients of the hot plasma at
-recombination and can therefore produce only E-modes. The tensor perturbations
-due to passing gravitational waves are not restricted in this way and can thus
-generate both E and B modes. The signal produced by these two methods is characterised by the
-tensor to scalar ration $r$. Figure \ref{fig:theory_aps} shows the theoretical
-power spectra of CMB perturbations in the $\Lambda$CDM standard model of
-Cosmology with the addition of an $r=0.1$ IGW B-mode signal.
+by a gradient (E-mode) and curl (B-mode) component. The signal produced by
+Thompson scattering occurs in the presence of a temperature quadrupole and
+follows the temperature gradients of the hot plasma at recombination and can
+therefore produce only E-modes. The tensor perturbations due to passing
+gravitational waves are not restricted in this way and can thus generate both
+E and B modes. The signal produced by these two methods is characterised by
+the tensor to scalar ration $r$. 
+
+In addition to the temperature power spectrum, we can then examine the
+E, B power spectrum as well as cross correlations between the temperature and
+polarization power spectra. Figure \ref{fig:theory_aps} shows the
+theoretical power spectra of CMB perturbations in the $\Lambda$CDM standard
+model of Cosmology with the addition of an $r=0.1$ IGW B-mode signal. 
+
 
 
 \begin{figure}
@@ -119,8 +191,6 @@ Cosmology with the addition of an $r=0.1$ IGW B-mode signal.
 \end{figure}
 
 
-
-\subsection{Science with the CMB Power Spectrum}
 
 
 
@@ -150,7 +220,7 @@ strategies developed for observation, calibration and systematics control
 proved the efficacy of small aperture refractors for CMB polarization studies
 and established the leading upper bounds on inflation at $r<0.70$
 \cite{cite:Bicep1}.
-\\
+
 Building on the techniques developed with its predecessor, Bicep2 replaced
 Bicep1 in 2009. It exchanged feedhorn coupled bolometers for antenna-coupled
 transition edge sensor (TES) bolometer arrays developed at JPL which have been
@@ -166,25 +236,24 @@ cross correlation between the Planck 353GHz and Bicep2 150GHz maps showed that
 a substantial part of the observed excess in Bicep2 was due to polarized dust
 emissions \cite{cite:BKP}. This joint analysis established a new upper limit
 of $r<0.12$
-\\
-Building on the observing power of Bicep2 the Keck Array deployed to the south
-pole in 2012 with five 150GHz receivers similar to Bicep2. These additional
-receivers confirmed the excess signal found with Bicep2 and contributed to the
-March 2014 results. In addition to extending the Bicep2 survey depth at 150GHz
-the Keck array has extended observations into three other observing bands at
-95GHz, 220GHz and 270GHz. The extension into other frequencies harnesses
-the Bicep/Keck program's proven capability to make deep maps to further
-constrain galactic foregrounds and refine the models of polarized dust
-emission. The Keck array is in its final observing season with four receivers
-in the 220GHz band and one at 270GHz.
-\\
+
+The Keck Array deployed to the south pole in 2012 with five 150GHz receivers
+similar to Bicep2. These additional receivers confirmed the excess signal
+found with Bicep2 and contributed to the March 2014 results. In addition to
+extending the Bicep2 survey depth at 150GHz the Keck array has extended
+observations into three other observing bands at 95GHz, 220GHz and 270GHz. The
+extension into other frequencies harnesses the Bicep/Keck program's proven
+capability to make deep maps to further constrain galactic foregrounds and
+refine the models of polarized dust emission. The Keck array is in its final
+observing season with four receivers in the 220GHz band and one at 270GHz.
+
 In the fall of 2014 Bicep3 was deployed at the south pole to run concurrently
 with the Keck array. Bicep3 vastly expands the design of the Bicep2 instrument with a
 focal plane containing 2500 detectors in the 95GHz band, almost 10x the 288
 detectors of a Keck style 95GHz receiver. Bicep3 serves as our prototype
 instrument leading to the eventual replacement of the Keck array with Bicep
 array.
-\\
+
 The Bicep array is a funded experiment which will replace the Keck Array for
 multifrequency observations. Using the more powerful Bicep3 style receivers,
 Bicep array will field three receivers centered at 35GHz, 95GHz, and 150GHz
@@ -208,8 +277,12 @@ emissions as well as emissions due to galactic synchrotron as shown in Figure
 \ref{fig:noilev}.
 \begin{figure}
 	\center
-	\includegraphics[width=.8\textwidth]{noilev_bk15.pdf}
-	\caption{}
+	\includegraphics[width=.7\textwidth]{noilev_bk15.pdf}
+	\caption{Noise levels in the Bicep/Keck combined observations through the
+	2015 observing season. The shaded regions show constraints on the signal
+	level of galactic foregrounds and signal levels corresponding to select values
+	of $r$ are shown at the bottom. All values are shown in the $\ell=80$
+	bandpower where the IGW signal is expected to be maximal.}
 	\label{fig:noilev}
 \end{figure}
 
