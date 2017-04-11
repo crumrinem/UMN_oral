@@ -8,7 +8,8 @@
 \usepackage[backend=biber, sorting=nyt]{biblatex}
 \bibliography{oralrefs}
 \usepackage{setspace}
-\doublespace
+%\doublespace
+\onehalfspace
 \usepackage[font=footnotesize, labelfont=bf]{caption}
 \begin{document}
 \author{Michael Crumrine}
@@ -75,8 +76,7 @@ m}$. We instead take an average over $m$ for a given $\ell$ to form the
 angular power spectrum:
 
 \begin{equation}
-	C_{\ell} = \frac{1}{2\ell +1}\sum _{m=-\ell} ^\ell \left< |a_{\ell m}|^2
-	\right>
+	C_{\ell} = \frac{1}{2\ell +1}\sum _{m=-\ell} ^\ell |a_{\ell m}|^2
 \end{equation}
 
 
@@ -347,52 +347,36 @@ the noise level of current observations in these bands is not sufficient for
 detection. Models of the contribution due to synchrotron do not predict
 significant contamination at frequencies upwards of 150GHz due to the strong
 frequency dependence.
-\textbf{Add in new BK15 plot with BK16 prelim points}
 
 %Look at PIP XXX - might give more information on exactly what this beta
 %parameter is. Seems like it might vary with sky patch according to BKP
 
-\subsection{Bicep Array}
+\section{Bicep Array}
 
-The Bicep Array experiment will leverage the technology used in Bicep3 and
-expand to a multifrequency array of receivers similarly to the expansion of
-the Keck array from Bicep2. 
+\subsection{Experiment Overview}
+Bicep Array will deploy four Bicep3 style receivers in four frequency bands
+with first light expected in 2019. Building on the success of previous
+experiments, Bicep Array will continue to use the antenna coupled transition
+edge sensor (TES) bolometers developed by JPL. These detectors leverage the strong
+temperature-dependence of superconductors near their transition point to
+detect extremely faint signals. The signal from these bolometers is then
+amplified by a series array of superconducting quantum interference devices
+(SQUIDs). We use cold optics to minimize the out of band extraneous signal
+incident on our detectors.
 
-\subsection{Detectors}
-Bicep Array will continue to use the dual polarization antenna coupled
-detector arrays developed for Bicep2. Each detector pixel consists of a large
-number of photolithographed orthogonal slot antennas optimized for their
-target wavelength. The summation of the incoming signal is eventually
-deposited into a resistor, changing the temperature of the coupled Transition
-Edge Sensor (TES). This produces a small change in temperature of the
-on-transition superconductive element which responds with a large change in
-resistance. This in turn leads to a small change in current which is amplified
-through a series array of Superconducting Quantum Interference Devices
-(SQUIDs) which are sensitive to extremely small changes in magnetic flux. This
-use of extremely sensitive superconducting sensors allows for detection of
-extremely faint CMB signal but also requires high systematics control to avoid
-extraneous pickup from non-sky sources. The superconducting elements also
-require a carefully designed housing in order to reach their operating
-temperature of $~273mK$.
+\subsection{Cryogenic Design}
+The cryogenic operating temperatures of our detector and optics system require
+a specially designed housing to thermally isolate the focal plane as much as
+possible. As with Keck and Bicep3 the Bicep Array cryostats will consist of a
+nested ambient temperature vacuum jacket, a 50K radiation shield, and a 4K
+optics tube. This nested approach protects the low temperature optics
+from absorbing significant radiative power since $P\propto (T_{H}^4-T_{C}^4)$.
+In addition to radiation shielding, there is an additional trade-off between
+structural support and heat conduction between the temperature shells. A low
+conductive loading may introduce significant deviation in pointing direction
+while more structural supports increase the thermal load on the cooling
+system. 
 
-
-\subsection{Cryostat}
-
-The cryogenic operating temperature of the detectors in the Bicep/Keck
-experiments require carefully designed housing. Each generation of receivers
-builds on the experience gained from the previous generation to improve the
-design. The Bicep Array cryostats will consist of three concentric shells each
-cooled to progressively lower temperatures. These shells nominally sit at
-temperatures of 300K, 50K and 4K with the coolest being closest to the
-center.This progressive cold shielding significantly reduces the radiative
-power that is absorbed by the cooler stages which scales as $\Delta (T^4)$.
-The inclusion of absorptive filters on the 300K and 50K shells help to
-additionally reduce the out of band power transmitted down the optical axis.
-
-
--Widened 4K stage for extra baffling esp at 35GHZ
--Same aperture size, throughput scales with num pixels -> frequency
--Chart of pixel numbers and NETs per frequency across the receivers
 
 \printbibliography
 \end{document}
