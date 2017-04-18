@@ -8,8 +8,8 @@
 \usepackage[backend=biber, sorting=nyt]{biblatex}
 \bibliography{oralrefs}
 \usepackage{setspace}
-%\doublespace
-\onehalfspace
+\doublespace
+%\onehalfspace
 \usepackage[font=footnotesize, labelfont=bf]{caption}
 \begin{document}
 \author{Michael Crumrine}
@@ -364,7 +364,7 @@ amplified by a series array of superconducting quantum interference devices
 (SQUIDs). We use cold optics to minimize the out of band extraneous signal
 incident on our detectors.
 
-\subsection{Cryogenic Design}
+\subsection{Cryogenic Considerations}
 The cryogenic operating temperatures of our detector and optics system require
 a specially designed housing to thermally isolate the focal plane as much as
 possible. As with Keck and Bicep3 the Bicep Array cryostats will consist of a
@@ -376,6 +376,87 @@ structural support and heat conduction between the temperature shells. A low
 conductive loading may introduce significant deviation in pointing direction
 while more structural supports increase the thermal load on the cooling
 system. 
+
+\subsection{Thermal Loading}
+The cryostat is operated at high vacuum ($\approx 10^{-5}$mTorr) which largely
+eliminates conductive loading due to residual gasses. The two largest
+contributions are due to conduction across the structural supports and
+radiation from higher temperature stages. Of these, the radiation absorbed by
+the lower temperature shells has the highest possible contribution. Radiative
+heat transfer for cryogenic systems is a well studied subject. We follow
+Ekin's textbook on cryogenic engineering to estimate this thermal load
+according to:
+
+\begin{equation}
+	P=\sigma A_{c} E (T_{h}^4 - T_{c}^4)
+	\label{eq:radload}
+\end{equation}
+
+where the $h$ and $c$ subscripts denote the hot and cold surfaces
+respectively, and $E$ depends on the emissivity of the surfaces as
+
+\begin{equation}
+	E=\frac{1}{1/\epsilon _h + 1/\epsilon _c - 1}
+\end{equation}
+
+Equation \ref{eq:radload} is valid for parallel plates, and concentric
+cylinders assuming specular reflection regime. Table \ref{table:emis} shows
+typical emissivities for the materials used in the Bicep Array cryostats. In
+addition to the radiative load, the structural supports conduct heat between
+the temperature shells according to the Fourier heat transfer law:
+
+
+\begin{equation}
+	\dot{Q}=\int _{T_1} ^{T_2} \frac{A}{L}K(T)dT
+\end{equation}
+
+The large temperature change across the support struts require a detailed
+knowledge of how the materials' thermal conductivity changes with temperature.
+NIST has a collection of thermal conductivity measurements for commonly used
+materials in cryogenic design including Aluminum and Titanium. Bicep Array
+also uses carbon fiber struts as structural supports, however this material is
+non-standardized which makes determining the thermal properties difficult,
+especially at high temperatures where few conductivity measurements exist. We
+therefore supplement published low temperature measurements with direct
+measurements of conducted power in a test cryostat system.
+
+
+
+
+In
+estimating the thermal load, our ultimate objective is to ensure that the
+innermost 4K shell is able to sufficiently cool the second stage He3 fridge
+which is responsible for cooling the TES detectors down to transition. The 50K
+stage serves as an intermediate shield that prevents radiation from the 300K
+vacuum jacket from directly illuminating any 4K element. However, intercepting
+this radiation warms the 50K stage which is also responsible for thermally
+sinking an alumina filter. We therefore seek to minimize the thermal load on
+both the 50K and 4K stages. 
+
+
+
+
+
+
+
+
+\begin{table}
+	\center
+\begin{tabular}{|l|l|}
+	\hline
+	Rough Aluminum & $\epsilon = 0.07-0.1$ \\
+	Polished Aluminum & $\epsilon = 0.04 - 0.06$ \\
+	Aluminized Mylar & $\epsilon = 0.035$ \\
+	OFHC Copper & $\epsilon = 0.65$ \\ \hline
+\end{tabular}
+	\caption{Typical emissivity values for materials used in the construction
+	of the Bicep Array cryostats.}
+	\label{table:emis}
+\end{table}
+
+
+
+
 
 
 \printbibliography
