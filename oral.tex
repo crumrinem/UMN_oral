@@ -467,7 +467,7 @@ Ekin's textbook on cryogenic engineering to estimate this thermal load
 according to:
 
 \begin{equation}
-	P=\sigma A_{c} E (T_{h}^4 - T_{c}^4)
+	\dot{Q}_{h\rightarrow c}=\sigma A_{c} E (T_{h}^4 - T_{c}^4)
 	\label{eq:radload}
 \end{equation}
 
@@ -486,43 +486,29 @@ the temperature shells according to the Fourier heat transfer law:
 
 
 \begin{equation}
-	\dot{Q}=\int _{T_1} ^{T_2} \frac{A}{L}K(T)dT
+	\dot{Q}_{1\rightarrow 2}=\int _{T_1} ^{T_2} \frac{A}{L}K(T)dT
+	\label{eq:conduction}
 \end{equation}
+
+
 
 The large temperature change across the support struts require a detailed
 knowledge of how the materials' thermal conductivity changes with temperature.
 NIST has a collection of thermal conductivity measurements for commonly used
 materials in cryogenic design including Aluminum and Titanium. Bicep Array
-also uses carbon fiber struts as structural supports, however this material is
-non-standardized which makes determining the thermal properties difficult,
-especially at high temperatures where few conductivity measurements exist. We
-therefore supplement published low temperature measurements with direct
-measurements of conducted power in a test cryostat system.
-
-
-
-
-In
-estimating the thermal load, our ultimate objective is to ensure that the
-innermost 4K shell is able to sufficiently cool the second stage He3 fridge
-which is responsible for cooling the TES detectors down to transition. The 50K
-stage serves as an intermediate shield that prevents radiation from the 300K
-vacuum jacket from directly illuminating any 4K element. However, intercepting
-this radiation warms the 50K stage which is also responsible for thermally
-sinking an alumina filter. We therefore seek to minimize the thermal load on
-both the 50K and 4K stages. 
-
-
-
-
-
-
-
-
+uses six Titanium ``V'' shaped supports at the front end to keep the optics tube
+centered and six carbon fiber struts at the back end which support most of the
+weight. Carbon fiber as a material is non-standardized which makes determining
+the thermal properties difficult, especially at high temperatures where few
+conductivity measurements exist. We therefore supplement published low
+temperature measurements with direct measurements of conducted power in a test
+cryostat system.
 \begin{table}
 	\center
 \begin{tabular}{|l|l|}
 	\hline
+	\textbf{Material} & \textbf{Emissivity} \\
+	\hline \hline
 	Rough Aluminum & $\epsilon = 0.07-0.1$ \\
 	Polished Aluminum & $\epsilon = 0.04 - 0.06$ \\
 	Aluminized Mylar & $\epsilon = 0.035$ \\
@@ -532,6 +518,170 @@ both the 50K and 4K stages.
 	of the Bicep Array cryostats.}
 	\label{table:emis}
 \end{table}
+
+
+
+\subsection{Radiation Shielding}
+The large surface area of the 50K radiation shield absorbs a significant
+amount of radiation. Using Equation \ref{eq:radload} the raw radiated heat
+transfer to the 50K shell from the enclosing 300K vacuum jacket is 107W which
+is far outside the capacity of our fist stage pulse tube cooling system. To
+reduce this load we surround the lower temperature shell with a series of
+thermally floating layers of Aluminiz Mylar. This Multiple Layer Insulation
+(MLI) creates a temperature gradient of isolated radiating shells which
+significantly reduces the transmitted power by reducing the $\Delta (T^4)$
+term of Equation \ref{eq:radload}. The modified power transmission to the cold
+shell when shielded by $N$ layers of MLI is
+
+\begin{equation}
+	\dot{Q}_{h\rightarrow c}=\frac{\sigma A_c (T_h^4 - T_c ^4)}{1/\epsilon _h
+	+ 1/\epsilon _c -1 + N(2/\epsilon _m -1)}
+	\label{eq:mlireduced}
+\end{equation}
+
+where $\epsilon _m$ is the emissivity of the MLI. Placing 30 thermally
+floating layers in between the 300K vacuum shell and the 50K radiation shield
+reduces absorbed radiative power to 2.73W at which point it becomes
+subdominant to the thermal loading from the structural supports and the
+absorptive optical filters. Although the radiation absorbed by the 4K stage
+from the 50K stage is much lower due to the smaller $\Delta (T^4)$ we choose
+to include 5 layers of MLI between the 50K radiation shield and the 4K optics
+tube as well.
+
+
+\subsection{Thermal Loading and Implications for Pointing}
+Using the equations above we can estimate the thermal loading on each of the
+two cryogenic stages of the cryostat and estimate an operating temperature for both
+stages of our pulse tube cooling system. We require a 4K stage operating
+temperature of less than $\approx 3.5K$ to allow the second stage He fridge to
+function. The 50K stage operating temperature is not as crucial, however lower
+temperatures allow for cooler optical filters which then radiate less power
+directly down the optics tube. Using equations \ref{eq:conduction} and
+\ref{eq:mlireduced} we calculate the thermal load onto the 4K and 50K stages
+as shown below in Table \ref{table:heatload}.
+
+In addition to the thermal load due to radiation from higher temperature
+stages and conduction across the structural supports we also account for
+conduction across the data cables which read out our detectors and the
+radiation absorbed by our optical filters at each stage. The thermal load due
+to the optical filters is obtained using data from the Bicep3 experiment's
+actual performance. We expect similar performance from Bicep Array which
+shares the same aperture size and filtering scheme as Bicep3.
+
+
+
+\begin{figure}
+	\center
+	\begin{tabular}{|l||l||l|}
+		\hline
+		& \textbf{50K}  & \textbf{4k}\\
+		\hline \hline
+		Radiation & $2.73 W$ & $0.0479 W$\\
+		Bottom Supports & $<2.4 W$ & $0.0759 W$\\
+		Top Supports & $1.93 W$ & $0.0821 W$\\
+		Data Cables & $1.07 W$ & $0.05 W$\\
+		Optical Filters & $12.51 W$ & $0.1538 W$\\
+		\hline
+		\textit{Total} & $20.64 W$ & $0.4097 W$\\
+		\hline
+	\end{tabular}
+	\caption{Above we show the calculated thermal load on the 50K radiation
+	shield and the 4K optics tube due to radiation from higher temperature
+	stages, conduction across the structural supports, conduction across the
+	data cables and radiation absorbed by the optical filters.}
+	\label{table:heatload}
+\end{figure}
+
+
+Using these numbers we can estimate the operating temperature of our pulse
+tube system by comparing the thermal load with the capacity curve supplied by
+the manufacturer shown in Figure \ref{fig:capcurve}. The calculated thermal
+load suggests a first stage operating temperature of 39K and a second stage
+temperature of 3.2K. While this is sufficient for operation, there is not much
+margin. We note however that the Bicep3 pulsetube significantly outperforms
+this Cryomech standard by $\approx 50\%$ on the first stage. This extra
+cooling capacity will help to alleviate some of the loading onto the optics
+stage by reducing the temperature gradients.
+
+\begin{figure}
+	\center
+	\includegraphics[clip, trim=.8in 3.5in .7in 2.5in,  width=.7\textwidth]{PT415RM_cc.pdf}
+	\caption{Reference capacity curve for the PT415 Pulse Tube Cryocooler with
+	remote motor option as supplied by Cryomech. Using the estimated thermal
+	load from Table \ref{table:heatload} gives an operating temperature of 39K
+	for the first stage and 3.2K for the second stage. The Bicep3 pulse tube
+	is observed to significantly outperform the Cryomech standard}
+	\label{fig:capcurve}
+
+
+
+\end{figure}
+
+
+
+\subsection{Implications for Pointing}
+The thermal load is closely tied to the pointing accuracy of the receiver.
+Table \ref{table:heatload} shows that heat conduction across the supports is
+subdominant only to the thermal load from the optical filters. However, if we
+wish to reduce the conductive load across these supports it comes at the cost
+of a less rigid support system. To estimate the pointing accuracy of our
+optics tube, we use Finite Element Analysis to simulate the deformations of
+the cryostat under gravitational load. Figure \ref{fig:pointing} shows the
+results of a structural simulation performed with the COMSOL Multiphysics
+software suite. In this simulation the cryostat is rotated to our lowest
+observing elevation of 45 degrees and the gravitational load of all interior
+components are attached to their respective mounting surfaces. 
+
+
+\begin{figure}
+	\center
+	\includegraphics[width=.9\textwidth]{disp_45_perp_4_shell.png}
+	\caption{Simulation results of the deformation of the 4K optics tube under
+	gravitational load as calculated by the COMSOL simulation suite. The
+	colorscale shows the magnitude of deformation in the vector direction
+	perpendicular to the optical axis (ie: -45 degrees). The deflections of
+	the 50K radiation shield to which the 4K optics tube is attached are
+	included in this simulation, however the shield is hidden for clarity.}
+	\label{fig:pointing}
+\end{figure}
+
+
+
+We are most interested in the deformations of the cryostat in the direction
+perpendicular to the optical axis. This will give an indication of the shift
+in pointing of the optics tube with respect to the fixed outer vacuum jacket.
+A simple calculation of the deflection of the back of the optics tube with
+respect to the front yields a pointing shift of $10$ arcseconds along the
+tube's $1.65 m$ length. As a secondary check, we also fit a plane to three
+points on the deformed baseplate and calculate the angle of the surface normal
+to be $45.0028$ degrees corresponding to a $10.255$ arcsecond pointing shift.
+The detectors used in Bicep Array will have large beam sizes compared to this
+shift with the 270GHz detectors having the smallest beams of 9 arcmin FHWM.
+This pointing shift is then acceptable for the Bicep array experiment.
+
+
+
+\section{Conclusions}
+The Bicep Array experiment will continue the successful achievements of its
+predecessors by pursuing increasingly deep maps of the polarized component of
+the CMB and expanding these observations into other frequencies in order to
+constrain galactic foregrounds. The design of the cryostat is nearing
+completion and delivery of the first receiver is expected during the fall of
+2017. After careful integration and characterization of the detectors and
+readout systems Bicep Array will deploy its first receiver to the South Pole
+in the winter of 2018. With a dual band 35/40 GHz focal plane this first
+receiver will rapidly push down the upper limits on polarized emission from
+galactic synchrotron. Future receivers will continue to push sensitivity in
+the bands at which Bicep / Keck have the deepest maps and at which
+contribution from galactic foregrounds are dimmest. With delensing in
+conjunction with SPT-3G we expect to reach a sensitivity of $\sigma _r <
+0.005$ by the end of the decade. This will place significant constraints on
+inflationary models and the dynamics of the universe's evolution within the
+first instants after the big bang.
+
+
+
+
 
 
 
