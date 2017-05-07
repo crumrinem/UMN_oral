@@ -20,48 +20,62 @@
 
 \section{Introduction}
 
-\subsection{A Brief History of Inflation}
+\subsection{A Brief History of Cosmology}
 The modern study of cosmology began in 1915 with Einstein's development of the general
 theory of Relativity \cite{cite:Einstein}. By combining the Einstein Field
 Equations with the assumptions of a homogeneous and isotropic universe,
-Friedmann developed a cosmological model which forms the core of the standard
+Friedmann developed a cosmological model in 1922 which forms the core of the standard
 model of cosmology\cite{cite:Friedmann}. Hubble's observations in the 1930s
 showed an expanding universe\cite{cite:Hubble} providing the first evidence
 for a Big Bang origin. This was further supported by the detection of the
 Cosmic Microwave Background by Penzias and Wilson in 1965\cite{cite:Penzias}.
 
 
+
+\subsection{The CMB and Inflation}
+The Cosmic Microwave Background (CMB) is colloquially called the ``afterglow"
+of the Big bang and is the source of the oldest photons in the universe.
+Originally predicted by Alpher and Gamov in their description of Big Bang
+Nucleosynthesis as a consequence of the dense and hot early
+universe\cite{cite:BBN}.  In the hot big bang, the early universe was an
+energetic plasma in which photons scattered continuously from free protons and
+electrons which prevented propagation over large distances.  Neutral Hydrogen
+was unstable in this period as most photons had energy well above the
+ionization threshold for Hydrogen. As the universe expanded, the temperature
+of this plasma decreased adiabatically until the free electrons and protons
+could combine to form stable, neutral Hydrogen. After this era of
+recombination about 380,000 years after the big bang, the photons decoupled
+from the plasma and began free streaming through the universe, redshifting due
+to continued expansion. We observe these photons today as a 2D ``surface of last
+scattering" which follows the spectral distribution of a 2.73K blackbody. 
+
+
 Increasing experimental precision revealed a uniform CMB and isotropic
 universe on scales exceeding the size of the horizon predicted by
 Friedmann cosmological models. In 1981 Guth suggested a small period of
-exponential expansion to solve these two problems. This theory of inflation
+exponential expansion to solve these two problems\cite{cite:Guth}. This theory of inflation
 has since seen further success in explaining the growth of cosmic structures
-and the lack of observed magnetic monopoles but has been criticized due to its
-need for fine-tuned initial conditions.
+as originating from quantum density fluctuations in the primordial projected
+to large scales by the inflationary epoch. Inflation also proposes an
+explanation for the lack of observed magnetic monopoles and other exotic
+relics that many grand unified theories (GUTs) predict would have been
+produced at the energy densities in the early universe. Any observable
+density of these exotic particles would have been heavily diluted by the
+exponential expansion of the inflationary epoch.
 
 
-\subsection{Origins of the CMB}
-One of the most successful predictions of inflation is the presence of a near
-uniform isotropic photon source known as the Cosmic Microwave Background
-(CMB).The CMB has the near uniform temperature spectrum of a 2.73K blackbody
-and is the source of the oldest photons in the universe. In the hot big bang, the
-early universe was an energetic plasma in which photons scattered continuously
-from free protons and electrons which prevented propagation over large
-distances. As the universe expanded, the temperature of this plasma decreased
-adiabatically until the free electrons and protons could combine to form
-neutral Hydrogen. After this era of recombination about 380,000 years after
-the big bang, the photons decoupled from the plasma and began free streaming
-through the universe, redshifting due to continued expansion. We observe
-these photons as a 2D "surface of last scattering". 
+
+
 
 \section{Science with the CMB}
 
 \subsection{Mapping the CMB}
 Precision cosmology experiments have shown that the CMB is not truly uniform.
-Results from COBE in 1992\cite{cite:COBE} showed the CMB to have a nearly
-isotropic temperature spectrum corresponding to a 2.73K blackbody but with
-fluctuations on the order of 10 $\mu$K. We examine these temperature
-perturbations with the spherical harmonics:
+Results from COBE in 1992\cite{cite:COBE} showed the nearly
+isotropic temperature spectrum of the CMB contains
+fluctuations on the order of 10 $\mu$K. These fluctuations correspond to
+density perturbations in the early universe.  We examine the statistical
+distribution of these perturbations with the spherical harmonics.
 
 
 \begin{equation}
@@ -70,30 +84,41 @@ perturbations with the spherical harmonics:
 \end{equation}
 
 
-Although this decomposition is a powerful tool, the universe is isotropic only
-in a statistical sense and we therefore cannot predict any individual $a_{\ell
-m}$. We instead take an average over $m$ for a given $\ell$ to form the
-angular power spectrum:
+The isotropy of the universe prevents the prediction of any individual $a_{\ell
+m}$. We therefore take an average over $m$ to form the
+angular power spectrum $C_\ell$.
 
 \begin{equation}
 	C_{\ell} = \frac{1}{2\ell +1}\sum _{m=-\ell} ^\ell |a_{\ell m}|^2
 \end{equation}
 
 
-The temperature power spectrum shown in Figure \ref{fig:temp_aps} contains
-much of the information concerning the geometry, evolution, and composition of
-our universe.
+Figure \ref{fig:temp_aps} shows the fluctuations in the temperature spectrum
+of the CMB as observed by the Planck experiment in their 100 GHz band and the
+corresponding angular power spectrum of these fluctuations. The relative sizes
+and locations of the peaks in this power spectrum can help constrain
+cosmological parameters that describe the composition and evolution of our
+universe. 
+
+
+
 %The simple $\Lambda$CDM model is based on the six parameters
 %shown in Table \ref{table:lcdm6par}. 
 \begin{figure}
 	\center
-	\includegraphics[width=.8\textwidth]{temp_aps.pdf}
-	\caption{The temperature power spectrum of the CMB. The primary and
-	acoustic peaks can be used to constrain cosmological parameters that
-	describe the geometry, evolution and composition of our universe.}
+	\includegraphics[clip, trim= 1.5in 7.5in 1.5in 1in, width=.4\textwidth, page=9]{planck_map.pdf}
+	\includegraphics[width=.4\textwidth]{temp_aps.pdf}
+	\caption{\textit{Left:} The temperature power spectrum of the CMB.
+	\textit{Right:} A map of the temperature fluctuations in the CMB from
+	Plank's 2015 results \cite{cite:planckmap}. The primary and acoustic peaks
+	in the temperature power spectrum can be used to constrain cosmological
+	parameters that describe the geometry, evolution and composition of our
+	universe.}
 	\label{fig:temp_aps}
 
 \end{figure}
+
+
 
 %\subsection{The 6 Parameter Model}
 
@@ -155,26 +180,57 @@ CMB polarization was predicted at the $\approx 10\%$ level by Bond et al
 \cite{cite:Bond} and first detected by DASI in 2002 \cite{cite:DASI}. Polnarev
 \cite{cite:Polnarev} realized that an inflationary period would imprint an
 additional polarization signal on the CMB due to the production of
-gravitational waves. 
+gravitational waves during the inflationary epoch. The spatial expansion and
+compression resulting from a passing gravitational wave would produce a
+sufficient temperature quadrupole to impart an additional net polarization on the CMB
+photons.
+
+
 
 This inflationary gravitational wave (IGW) signal is expected to be orders of
-magnitude fainter than the signal due to Thompson scattering and difficult to
+magnitude fainter than the signal due to the temperature fluctuations in the
+primordial plasma and difficult to
 separate in the Stokes parameter space conventionally used when studying
 linearly polarized light. It was shown by Kamionkowski et al
 \cite{cite:Kamionkowski} that the polarization could instead be parameterized
-by a gradient (E-mode) and curl (B-mode) component. The signal produced by
-Thompson scattering occurs in the presence of a temperature quadrupole and
-follows the temperature gradients of the hot plasma at recombination. It can
-therefore produce only E-modes. The tensor perturbations due to passing
-gravitational waves are not restricted in this way and can thus generate both
-E and B modes. The signal produced by these two methods is characterised by
-the tensor to scalar ration $r$. 
+by a gradient (E-mode) and curl (B-mode) component. The polarization component
+due to temperature quadrupoles in the primordial plasma naturally follows the
+temperature gradients of the plasma and so produces the E-mode component. The
+tensor perturbations due to passing gravitational waves are not restricted in
+this way and can therefore create both E-modes and B-modes. The amplitude of
+this B-mode signal is characterised by the energy scale of inflation and
+related to the E-mode polarization signal by the tensor to scalar ratio $r$.
+Figure \ref{fig:theory_aps} shows the theoretical power spectra of CMB
+perturbations in the $\Lambda$CDM standard model of Cosmology with the
+addition of an $r=0.1$ IGW B-mode signal. 
 
-In addition to the temperature power spectrum, we can then examine the
-E, B power spectrum as well as cross correlations between the temperature and
-polarization power spectra. Figure \ref{fig:theory_aps} shows the
-theoretical power spectra of CMB perturbations in the $\Lambda$CDM standard
-model of Cosmology with the addition of an $r=0.1$ IGW B-mode signal. 
+As previously mentioned the E, B parameter space is preferred for analyzing
+the polarization signal in the CMB as it provides a direct method for
+extracting the signal due to inflationary gravitational waves. However, the Bicep /
+Keck detectors generate maps in the Stokes Q, U parameter space. By performing
+a transformation in Fourier space we can convert Stokes Q and U polarization
+into the desired E-mode and B-mode parameter space.
+
+
+
+
+
+\subsection{Gravitational Lensing}
+Although the mean free path of CMB photons is effectively infinite, the
+presence of large scale structures in our universe can interact with these
+photons and alter the signals we detect in the CMB. In particular,
+gravitational lensing due to high matter concentrations is capable of
+converting some E-modes into B-modes by relocating polarized photons on the
+sky. The transformation from Q and U to E and B occurs in Fourier space and is
+inherently nonlocal. The relocation of polarized photons by a gravitational
+lens is therefore capable of converting E modes to B modes.
+Figure \ref{fig:theory_aps} also shows lensing contribution to the
+B-mode angular power spectrum. The lensing contribution to the B-mode spectrum
+is largest at small scales due to the high matter densities which produce
+strong gravitational lenses. We note also that in principle gravitational
+lensing is capable of converting B-modes to E-modes, however the significantly
+higher amplitude of the E-mode signal is not highly effected by the addition
+of this small signal.
 
 
 
@@ -186,7 +242,10 @@ model of Cosmology with the addition of an $r=0.1$ IGW B-mode signal.
 	temperature anisotropies (black) contain orders of magnitude more power
 	than the E-mode (blue) and B-mode (red) polarization anisotropies. The BB
 	spectrum is split into a lensing component (dotted) and a tensor component
-	(solid) plotted at the $r=0.1$ level.}
+	(solid) plotted at the $r=0.1$ level. Current constraints on  IGWs
+	constrain the signal at less than the $r=0.1$ level shown here. We note
+	that some inflationary models predict a tensor to scalar ratio that is
+	unobservably small.}
 	\label{fig:theory_aps}
 
 \end{figure}
@@ -199,9 +258,9 @@ inflation are still undetermined. The favored theory of slow roll inflation
 proposes a scalar field $\phi$ in which the potential of the field dominates
 over its kinetic energy. There mare many possible potentials which fit the
 mathematical requirements of inflation theory which yield a range of values
-for the tensor to scalar ratio. By continuing to push the constraints on $r$
+for the tensor to scalar ratio $r$. By continuing to push the constraints on $r$
 we restrict the possible potentials of this scalar field. A summary of current
-restrictions on $r$ and $n_s$ which depends on the slow roll parameters is
+restrictions on inflation in the $r$ and $n_s$ parameter space
 shown in Figure \ref{fig:status}. The Bicep / Keck constraints heavily
 disfavor the $\phi ^2$ model but still allow for other models which have
 $r<0.1$
@@ -226,8 +285,12 @@ The Bicep/Keck experiments are a staged series of small aperture ground based
 telescopes which aim to produce extremely deep degree-scale polarization maps
 of the CMB. The high systematics control and long integration time have
 enabled Bicep and Keck to set the strictest limits on inflationary
-gravitational wave B-mode signal to date. Current published B-mode
-measurements are shown in Figure \ref{fig:BK_vs_world}.
+gravitational wave B-mode signals to date. Figure \ref{fig:BK_vs_world} shows
+current published measurements of B-mode polarization in the CMB. The Bicep
+and Keck experiments along with SPTpol and Polarbear have measured the B-mode
+component due to lensing at high significance. Bicep and Keck have currently
+published the strictest constraints on B-mode measurements on large angular
+scales.
 
 \begin{figure}
 	\center
@@ -245,53 +308,61 @@ measurements are shown in Figure \ref{fig:BK_vs_world}.
 Each generation of receiver builds on the experience gained from
 the previous generation while pushing deeper in sensitivity.
 Bicep1 was deployed to the south pole in 2006 and used 98 feedhorn coupled
-bolometers observing at 100GHz and 150GHz. Over three observing seasons the
-strategies developed for observation, calibration and systematics control
-proved the efficacy of small aperture refractors for CMB polarization studies
-and established the leading upper bounds on inflation at $r<0.70$
-\cite{cite:Bicep1}.
+bolometers observing at 100GHz and 150GHz. After observing for three seasons,
+Bicep1 established the leading  upper bounds on inflation at $r<0.70$
+\cite{cite:Bicep1}. The strategies developed for observation, calibration and
+systematics control during the operation of Bicep1 proved the efficacy of
+small aperture refractors for CMB polarization studies and have enabled the
+high systematics control achieved by subsequent experiments in the series.
 
 Building on the techniques developed with its predecessor, Bicep2 replaced
 Bicep1 in 2009. It exchanged feedhorn coupled bolometers for antenna-coupled
 transition edge sensor (TES) bolometer arrays developed at JPL which have been
-used in every subsequent telescope in the series. Concentrating its observing
+used in every subsequent experiment in the series. Concentrating its observing
 power at 150GHz, in March 2014 Bicep2 announced a detection of excess signal
 in its observing band consistent with an IGW signal of $r=0.2$\cite{cite:BK1}.
 However, the interpretation of this excess as IGW signal relied heavily on
-models of polarized dust emission which had not been highly constrained at the
-time. Later that year new high frequency maps from the Planck experiment
+models of polarized dust emission. Later that year new high frequency maps from the Planck experiment
 indicated that the dust models had underestimated polarized emission in the
-faintest sky regions \cite{cite:PlanckXIX}. A joint analysis with Planck and
-cross correlation between the Planck 353GHz and Bicep2 150GHz maps showed that
-a substantial part of the observed excess in Bicep2 was due to polarized dust
-emissions \cite{cite:BKP}. This joint analysis established a new upper limit
-of $r<0.12$
+faintest sky regions \cite{cite:PlanckXIX} including the Bicep / Keck
+observing patch. A subsequent joint analysis with Planck and cross correlation
+between the Planck 353GHz and Bicep2 150GHz maps showed that a substantial
+part of the observed excess in Bicep2 was due to polarized dust emissions
+\cite{cite:BKP}. Using the new maps of polarized dust provided by Planck, this
+joint analysis established a new upper limit of $r<0.12$ \cite{cite:BKP}.
 
 The Keck Array deployed to the south pole in 2012 with five 150GHz receivers
 similar to Bicep2. These additional receivers confirmed the excess signal
 found with Bicep2 and contributed to the March 2014 results. In addition to
 extending the Bicep2 survey depth at 150GHz the Keck array has extended
-observations into three other observing bands at 95GHz, 220GHz and 270GHz. The
-extension into other frequencies harnesses the Bicep/Keck program's proven
-capability to make deep maps to further constrain galactic foregrounds and
-refine the models of polarized dust emission. The Keck array is in its final
-observing season with four receivers in the 220GHz band and one at 270GHz.
+observations into three other observing bands at 95GHz, 220GHz and 270GHz.
+This extension into other frequencies harnesses the Bicep/Keck program's
+proven capability to make deep maps in order to further constrain galactic foregrounds
+and refine the models of polarized dust emission. The Keck array is in its
+final observing season with four receivers in the 220GHz band and one at
+270GHz.
 
 In the fall of 2014 Bicep3 was deployed at the south pole to run concurrently
 with the Keck array. Bicep3 vastly expands the design of the Bicep2 instrument with a
-focal plane containing 2500 detectors in the 95GHz band, almost 10x the 288
-detectors of a Keck style 95GHz receiver. Bicep3 serves as our prototype
-instrument leading to the eventual replacement of the Keck array with Bicep
-array.
+a larger focal plane with an order of magnitude more detectors and an aperture
+twice the size of the Bicep2 receiver. Just as Bicep2 was expanded into the
+five receiver Keck array, Bicep3 serves as our pathfinder instrument leading
+to the eventual replacement of the Keck array with the Bicep array.
 
 The Bicep array is a funded experiment which will replace the Keck Array for
 multifrequency observations. Using the more powerful Bicep3 style receivers,
-Bicep array will field three receivers centered at 35GHz, 95GHz, and 150GHz
-along with a dual band 220/270GHz receiver. The new 35GHz receiver will
-heavily constrain galactic synchrotron radiation past the upper limits set by
-WMAP's 23GHZ band while the increased sensitivity at higher frequencies will
-allow for better constraints on dust emissions at frequencies closer to our
-other bands than the Planck 353GHz data.
+Bicep array will field four receivers: one each centered at 95GHz and 150GHz,
+and two dual band 35/40GHz and 220/270GHz receivers. The new 35/40GHz band will
+heavily constrain galactic synchrotron radiation, the upper limits of
+which are currently set by WMAP's 23GHZ band and cross correlation with our
+own 95GHz band. The addition of the 95GHz and 150GHz receivers will continue
+to push sensitivity in the frequencies at which foreground contributions are
+expected to be faintest and at the Bicep / Keck maps are already the deepest.
+The final high frequency receiver will continue the Keck array's work in
+constraining emissions from polarized galactic dust. Directly observing
+these foregrounds in our own observing patch eliminates the need to account
+for spatial variation of the foreground spectra.
+
 
 
 \begin{figure}
@@ -316,7 +387,7 @@ minimized by selection of observing area their emissions must be constrained
 and accounted for. As shown by the 2014 joint analysis between Bicep2/Keck and
 Planck, constraints on these models have significant impact on the
 interpretation of any observed excess signal. By expanding observations into
-multiple frequencies, the Keck array has further constrained these dust
+multiple frequencies, the Keck array has begun to constrain these dust
 emissions as well as emissions due to galactic synchrotron as shown in Figure
 \ref{fig:noilev}.
 \begin{figure}
@@ -326,15 +397,15 @@ emissions as well as emissions due to galactic synchrotron as shown in Figure
 	2015 observing season. The shaded regions show constraints on the signal
 	level of galactic foregrounds and signal levels corresponding to select values
 	of $r$ are shown at the bottom. All values are shown in the $\ell=80$
-	bandpower where the IGW signal is expected to be maximal.}
+	bandpower where the IGW signal is expected to be maximal (See Figure
+	\ref{fig:theory_aps}.)}
 	\label{fig:noilev}
 \end{figure}
 
 \subsection{Polarized Dust}
 Polarized emissions from galactic dust provide an excess BB signal on top of
-that expected from $\Lambda$CDM and gravitational lensing which (although low
-in power) are significant compared to the IGW signal. These emissions depend
-significantly on frequency, exhibiting a power law like dependence. As shown
+that expected from $\Lambda$CDM and gravitational lensing. These emissions 
+are strongly frequency dependent and exhibit a power law like behavior. As shown
 in Planck XXII \cite{cite:PlanckXXII} the spectral energy distribution of
 galactic dust can be described by a modified blackbody spectrum
 
@@ -343,10 +414,10 @@ galactic dust can be described by a modified blackbody spectrum
 	\label{eq:dust_sed}
 \end{equation}
 
-Where $A_d$ is an amplitude at some frequency and $\beta _d > 0$ is the spectral
-index of dust emission and $B(T)$ is the standard blackbody spectrum. In order
+Where $A_d$ sets the amplitude at a chosen frequency, $\beta _d > 0$ is the spectral
+index of dust emission and $B_{\nu}(T)$ is the standard blackbody spectrum. In order
 to fully constrain the dust signal we must complement this intensity
-spectrum with a description of the dust's spatial behavior
+spectrum with a description of the dust's power spectral behavior.
 
 \begin{equation}
 	D_\ell \propto \ell^\alpha
@@ -356,27 +427,32 @@ spectrum with a description of the dust's spatial behavior
 where $D_\ell=C_\ell \frac{\ell(\ell +1)}{2\pi}$. The parameters in these
 equations model the dust contribution to polarization signal in our field. As
 Equation \ref{eq:dust_sed} shows this signal is brighter at higher
-frequencies. We therefore use the Planck 353GHz maps to set these dust
-parameters and extrapolate to our observed frequencies. This necessarily means
-that any uncertainty contained in the high frequency observations is magnified
-due to the power law behavior.
+frequencies. Our current constraints use the Planck 353GHz maps and cross
+correlation with our own 220GHz maps to set these dust parameters and
+extrapolate to our 95GHz and 150GHz bands. This necessarily means that any
+uncertainty contained in the high frequency observations is magnified due to
+the lever arm in frequency. 
 
 Figure \ref{fig:noilev} shows the noise uncertainty and signal levels
-the $\ell=80$ bandpower where the IGW signal is expected to peak. The low 150x150
-noise allows us to detect excess signal with high significance. However, the high P353xP353
-noise as compared to dust signal does not provide significant enough
-constraining power to separate dust signal from potential IGW signal in the
-150GHz band. The 220x220 point shows preliminary numbers from our 2015
-observing season in which the Keck array operated with two 220GHz receivers
-and provides similar constraining power to the Planck 353GHz data while being
-closer to our main observing bands. Two additional 220GHz receivers were added
-for the 2016 observing season and observations at 270GHz will begin in the
-current 2017 season. These observations will allow us to produce continually
-improving constraints on dust in our field.
+the $\ell=80$ bandpower where the IGW signal is expected to peak. We are able
+to detect signal in excess of that predicted by $\Lambda$CDM with high
+significance in our 150GHz band due to the low noise level.
+However, the high P353GHz noise as compared to dust signal does not provide
+significant enough constraining power to separate dust signal from potential
+IGW signal in the 150GHz band. The 220x220 point shows preliminary numbers
+from our 2015 observing season in which the Keck array operated with two
+220GHz receivers and provides similar constraining power to the Planck 353GHz
+data while being closer to our deepest observing bands. Two additional 220GHz
+receivers were added for the 2016 observing season and observations at 270GHz
+will begin in the current 2017 season. These observations will allow us to
+produce continually improving constraints on dust in our field.
+
+
 \subsection{Galactic Synchrotron}
-An upper limit for an additional foreground signal is shown in Figure
+At low frequencies we must account for polarized galactic synchrotron
+emissions. An upper limit for this signal is shown in Figure
 \ref{fig:noilev}. Rather than increasing in intensity at higher frequencies,
-polarized emissions from galactic synchrotron radiation are strongest at low
+ galactic synchrotron contributions are strongest at low
 frequencies. We model synchrotron emission intensity as
 \begin{equation}
 	I_\nu = A_s \nu^{\beta _s}
@@ -402,27 +478,30 @@ Bicep Array will deploy four Bicep3 style receivers in four frequency bands
 with first light expected in 2019. Building on the success of previous
 experiments, Bicep Array will continue to use the antenna coupled transition
 edge sensor (TES) bolometers developed by JPL. These detectors leverage the strong
-temperature-dependence of superconductors near their transition point to
-detect extremely faint signals. The signal from these bolometers is then
-amplified by a series array of superconducting quantum interference devices
-(SQUIDs). We use cold optics to minimize the out of band extraneous signal
-incident on our detectors.
+temperature-dependence of superconductors near their transition temperature to
+detect extremely faint signals. Each pixel is composed of two detectors which
+are sensitive to orthogonal linear polarizations. By co-locating these
+detectors we can use the pair sum to generate intensity maps corresponding to
+the CMB temperature and the pair difference to generate the Stokes Q and U
+maps.
 
 Each Bicep array receiver will field $\approx$ 10 time the detectors of a Keck
-receiver in the same band. The additional increase in aperture from 26cm to
-55cm will quickly push sensitivity to synchrotron with Bicep Array's new band
+receiver in the same band. With the additional increase in aperture from 26cm to
+55cm we will quickly push sensitivity to synchrotron with Bicep Array's new band
 and continue to push sensitivity in our deepest 95GHz and 150GHz bands.
-Projections for the sensitivity of the Bicep / Keck experiments including the
-Bicep array are shown in Figure \ref{fig:projections}. As we continue to
-increase in sensitivity to $r$, the B-mode lensing component will become a
-significant contributor to $\sigma _r$. This achromatic foreground cannot be
-constrained with multifrequency observations but it can be accounted for via
-delensing. Given a high resolution map of the angular deflection field $\Delta
-\phi$ of the CMB photons from last scattering to observation it is possible to
-undeflect Stokes Q, U maps of polarized signal. The third generation SPT-3G
-receiver deployed to the South Pole in late 2016 and will spend a significant
-fraction of their time observing the Bicep/Keck sky patch. Using $\phi$ and
-Q/U maps provided by SPT-3G will allow us to push $\sigma _r$ below $0.005$.
+Established sensitivities and future projections for the sensitivity of the
+Bicep / Keck experiments including the Bicep array are shown in Figure
+\ref{fig:projections}. As we continue to increase in sensitivity to $r$, the
+B-mode lensing component will become a significant contributor to $\sigma _r$.
+This achromatic foreground cannot be constrained with multifrequency
+observations but it can be accounted for via delensing. Given a high
+resolution map of the angular deflection field $\Delta \phi$ of the CMB
+photons from last scattering to observation it is possible to undeflect Stokes
+Q, U maps of polarized signal and so ``delense" the polarization signal. The
+third generation SPT-3G receiver deployed to the South Pole in late 2016 and
+will spend a significant fraction of their time observing the Bicep/Keck sky
+patch to aid the delensing effort. In collaboration with SPT-3G we expect to achiever
+$\sigma _r <0.005$ by the end of the decade.
 
 
 
@@ -445,25 +524,26 @@ Q/U maps provided by SPT-3G will allow us to push $\sigma _r$ below $0.005$.
 
 \subsection{Cryogenic Considerations}
 The cryogenic operating temperatures of our detector and optics system require
-a specially designed housing to thermally isolate the focal plane as much as
-possible. As with Keck and Bicep3 the Bicep Array cryostats will consist of a
-nested ambient temperature vacuum jacket, a 50K radiation shield, and a 4K
-optics tube. This nested approach protects the low temperature optics
-from absorbing significant radiative power since $P\propto (T_{H}^4-T_{C}^4)$.
-In addition to radiation shielding, there is an additional trade-off between
-structural support and heat conduction between the temperature shells. A low
-conductive loading may introduce significant deviation in pointing direction
-while more structural supports increase the thermal load on the cooling
-system. 
+a specially designed housing to thermally isolate the focal plane. As with
+Keck and Bicep3 the Bicep Array cryostats will consist of 3 nested concentric
+shells: an ambient temperature vacuum jacket, an intermediate radiation shield, and a 
+cold optics tube. Hereafter we refer to these individual stages by their nominal
+operating temperatures of 300K, 50K and 4K respectively. This nested approach protects the
+low temperature optics from absorbing significant radiative power as
+$P\propto T^4$.  In addition to radiation shielding, there is an
+additional trade-off between structural support and heat conduction between
+the temperature shells. A low conductive loading may introduce significant
+deviation in pointing direction while a more structural support system may increase the
+thermal load on the cooling system. 
 
 \subsection{Thermal Loading}
 The cryostat is operated at high vacuum ($\approx 10^{-5}$mTorr) which largely
 eliminates conductive loading due to residual gasses. The two largest
-contributions are due to conduction across the structural supports and
+contributions are then due to conduction across the structural supports and
 radiation from higher temperature stages. Of these, the radiation absorbed by
 the lower temperature shells has the highest possible contribution. Radiative
 heat transfer for cryogenic systems is a well studied subject. We follow
-Ekin's textbook on cryogenic engineering to estimate this thermal load
+Ekin's textbook \cite{cite:Ekin} on cryogenic engineering to estimate this thermal load
 according to:
 
 \begin{equation}
@@ -479,7 +559,7 @@ respectively, and $E$ depends on the emissivity of the surfaces as
 \end{equation}
 
 Equation \ref{eq:radload} is valid for parallel plates, and concentric
-cylinders assuming specular reflection regime. Table \ref{table:emis} shows
+cylinders assuming the specular reflection regime. Table \ref{table:emis} shows
 typical emissivities for the materials used in the Bicep Array cryostats. In
 addition to the radiative load, the structural supports conduct heat between
 the temperature shells according to the Fourier heat transfer law:
@@ -494,10 +574,10 @@ the temperature shells according to the Fourier heat transfer law:
 
 The large temperature change across the support struts require a detailed
 knowledge of how the materials' thermal conductivity changes with temperature.
-NIST has a collection of thermal conductivity measurements for commonly used
-materials in cryogenic design including Aluminum and Titanium. Bicep Array
-uses six Titanium ``V'' shaped supports at the front end to keep the optics tube
-centered and six carbon fiber struts at the back end which support most of the
+NIST maintains a collection of thermal conductivity measurements for commonly used
+materials in cryogenic design including Aluminum and Titanium \cite{cite:NIST}. Bicep Array
+uses six Titanium ``V'' shaped supports at the front end to maintain
+concentricity of the  optics tube and twelve carbon fiber struts at the back end which support most of the
 weight. Carbon fiber as a material is non-standardized which makes determining
 the thermal properties difficult, especially at high temperatures where few
 conductivity measurements exist. We therefore supplement published low
@@ -523,11 +603,11 @@ cryostat system.
 
 \subsection{Radiation Shielding}
 The large surface area of the 50K radiation shield absorbs a significant
-amount of radiation. Using Equation \ref{eq:radload} the raw radiated heat
-transfer to the 50K shell from the enclosing 300K vacuum jacket is 107W which
+amount of power. Using Equation \ref{eq:radload} the raw radiated heat
+transfer to the 50K shell from the enclosing 300K vacuum jacket is 86.13W which
 is far outside the capacity of our fist stage pulse tube cooling system. To
 reduce this load we surround the lower temperature shell with a series of
-thermally floating layers of Aluminiz Mylar. This Multiple Layer Insulation
+thermally floating layers of Aluminized Mylar. This multiple layer insulation
 (MLI) creates a temperature gradient of isolated radiating shells which
 significantly reduces the transmitted power by reducing the $\Delta (T^4)$
 term of Equation \ref{eq:radload}. The modified power transmission to the cold
@@ -541,7 +621,7 @@ shell when shielded by $N$ layers of MLI is
 
 where $\epsilon _m$ is the emissivity of the MLI. Placing 30 thermally
 floating layers in between the 300K vacuum shell and the 50K radiation shield
-reduces absorbed radiative power to 2.73W at which point it becomes
+reduces absorbed radiative power to 0.96W at which point it becomes
 subdominant to the thermal loading from the structural supports and the
 absorptive optical filters. Although the radiation absorbed by the 4K stage
 from the 50K stage is much lower due to the smaller $\Delta (T^4)$ we choose
@@ -549,13 +629,14 @@ to include 5 layers of MLI between the 50K radiation shield and the 4K optics
 tube as well.
 
 
-\subsection{Thermal Loading and Implications for Pointing}
+\subsection{Thermal Performance}
 Using the equations above we can estimate the thermal loading on each of the
 two cryogenic stages of the cryostat and estimate an operating temperature for both
 stages of our pulse tube cooling system. We require a 4K stage operating
 temperature of less than $\approx 3.5K$ to allow the second stage He fridge to
-function. The 50K stage operating temperature is not as crucial, however lower
-temperatures allow for cooler optical filters which then radiate less power
+function. The 50K stage operating temperature is not as crucial, however we
+thermally sink optical filters to the 50K radiation shield. Lower
+temperatures then allow for cooler optical filters which radiate less power
 directly down the optics tube. Using equations \ref{eq:conduction} and
 \ref{eq:mlireduced} we calculate the thermal load onto the 4K and 50K stages
 as shown below in Table \ref{table:heatload}.
@@ -588,29 +669,43 @@ shares the same aperture size and filtering scheme as Bicep3.
 	\caption{Above we show the calculated thermal load on the 50K radiation
 	shield and the 4K optics tube due to radiation from higher temperature
 	stages, conduction across the structural supports, conduction across the
-	data cables and radiation absorbed by the optical filters.}
+	data cables and radiation absorbed by the optical filters. The upper limit
+	for power conducted across the bottom supports to the 50K radiation shield
+	is set by observed performance of the Keck receivers. Note that the
+	radiation numbers shown here include power absorbed by all parts of the
+	corresponding temperature stages and include absorption from flanges which
+	do not have sufficient clearance for an MLI blanket.}
 	\label{table:heatload}
 \end{figure}
 
 
 Using these numbers we can estimate the operating temperature of our pulse
 tube system by comparing the thermal load with the capacity curve supplied by
-the manufacturer shown in Figure \ref{fig:capcurve}. The calculated thermal
+the manufacturer shown in Figure \ref{fig:capcurve}. This capacity curve shows
+the expected operating temperature of pulse tube's first and second stages -
+connected to our 50K radiation shield and 4K optics tube respectively - given
+the incident power on both stages. The calculated thermal
 load suggests a first stage operating temperature of 39K and a second stage
 temperature of 3.2K. While this is sufficient for operation, there is not much
-margin. We note however that the Bicep3 pulsetube significantly outperforms
-this Cryomech standard by $\approx 50\%$ on the first stage. This extra
+margin. We note however that the Bicep3 pulsetube is oberved to significantly outperform
+the Cryomech standard by $\approx 50\%$ on the first stage. This extra
 cooling capacity will help to alleviate some of the loading onto the optics
-stage by reducing the temperature gradients.
+stage by reducing the power transferred to the 4K optics tube.
 
 \begin{figure}
 	\center
 	\includegraphics[clip, trim=.8in 3.5in .7in 2.5in,  width=.7\textwidth]{PT415RM_cc.pdf}
 	\caption{Reference capacity curve for the PT415 Pulse Tube Cryocooler with
-	remote motor option as supplied by Cryomech. Using the estimated thermal
+	remote motor option as supplied by Cryomech. The four data points show the
+	incident power applied to the first stage (top) and second stage (left).
+	Using these points as a reference we can estimate the operating
+	temperature of the two pulse tube stages once we have calculated the
+	thermal load on each stage. The first stage and second stage of this pulse
+	tube cooling system are connected to our 50K radiation shield and 4K
+	optics tube respectively. Using the estimated thermal
 	load from Table \ref{table:heatload} gives an operating temperature of 39K
 	for the first stage and 3.2K for the second stage. The Bicep3 pulse tube
-	is observed to significantly outperform the Cryomech standard}
+	is observed to significantly outperform the Cryomech standard.}
 	\label{fig:capcurve}
 
 
@@ -625,7 +720,7 @@ Table \ref{table:heatload} shows that heat conduction across the supports is
 subdominant only to the thermal load from the optical filters. However, if we
 wish to reduce the conductive load across these supports it comes at the cost
 of a less rigid support system. To estimate the pointing accuracy of our
-optics tube, we use Finite Element Analysis to simulate the deformations of
+optics tube, we use finite element analysis to simulate the deformations of
 the cryostat under gravitational load. Figure \ref{fig:pointing} shows the
 results of a structural simulation performed with the COMSOL Multiphysics
 software suite. In this simulation the cryostat is rotated to our lowest
@@ -652,9 +747,9 @@ perpendicular to the optical axis. This will give an indication of the shift
 in pointing of the optics tube with respect to the fixed outer vacuum jacket.
 A simple calculation of the deflection of the back of the optics tube with
 respect to the front yields a pointing shift of $10$ arcseconds along the
-tube's $1.65 m$ length. As a secondary check, we also fit a plane to three
-points on the deformed baseplate and calculate the angle of the surface normal
-to be $45.0028$ degrees corresponding to a $10.255$ arcsecond pointing shift.
+tube's $1.65$m length. As a secondary check, we also fit a plane to three
+points on the deformed plate that supports our focal plane and calculate the angle of the surface normal
+to be $45.0028$ degrees from the horizontal corresponding to a $10.255$ arcsecond pointing shift.
 The detectors used in Bicep Array will have large beam sizes compared to this
 shift with the 270GHz detectors having the smallest beams of 9 arcmin FHWM.
 This pointing shift is then acceptable for the Bicep array experiment.

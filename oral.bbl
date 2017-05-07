@@ -19,6 +19,41 @@
 
 \refsection{0}
   \sortlist[entry]{nyt/global}
+    \entry{cite:BBN}{article}{}
+      \name{author}{3}{}{%
+        {{hash=afd5c9916fd747c212ec62912e819fd9}{%
+           family={{Alpher}},
+           family_i={A\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           given_i={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6e3a3e45efd053d794195d3225745e0a}{%
+           family={{Bethe}},
+           family_i={B\bibinitperiod},
+           given={H.},
+           given_i={H\bibinitperiod}}}%
+        {{hash=1ed9feff746ebceff43f60b8b6c243bc}{%
+           family={{Gamow}},
+           family_i={G\bibinitperiod},
+           given={G.},
+           given_i={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{49c19609a653d652e7c3369c1f657cbe}
+      \strng{fullhash}{49c19609a653d652e7c3369c1f657cbe}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review}
+      \field{month}{04}
+      \field{title}{{The Origin of Chemical Elements}}
+      \field{volume}{73}
+      \field{year}{1948}
+      \field{pages}{803\bibrangedash 804}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1103/PhysRev.73.803
+      \endverb
+    \endentry
     \entry{cite:Bicep1}{article}{}
       \name{author}{34}{}{%
         {{hash=8df4ab3a03cfcfdc8889c4cb9f825cb0}{%
@@ -1052,6 +1087,26 @@
       \field{title}{{Die Feldgleichungen der Gravitation}}
       \field{year}{1915}
     \endentry
+    \entry{cite:Ekin}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e186b5ceb8b9037c85372a21f294d2fb}{%
+           family={Ekin},
+           family_i={E\bibinitperiod},
+           given={J.\bibnamedelimi W.},
+           given_i={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{e186b5ceb8b9037c85372a21f294d2fb}
+      \strng{fullhash}{e186b5ceb8b9037c85372a21f294d2fb}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Experimental techniques for low-temperature measurements: cryostat design, material properties, and superconductor critical-current testing}
+      \field{year}{2006}
+    \endentry
     \entry{cite:Friedmann}{article}{}
       \name{author}{1}{}{%
         {{hash=14fd39b243c06826e7bd152f85c37bc1}{%
@@ -1074,6 +1129,31 @@
       \range{pages}{10}
       \verb{doi}
       \verb 10.1007/BF01332580
+      \endverb
+    \endentry
+    \entry{cite:Guth}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a4274467a0f4d9ae03d9ad997b0449bd}{%
+           family={{Guth}},
+           family_i={G\bibinitperiod},
+           given={A.\bibnamedelimi H.},
+           given_i={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{a4274467a0f4d9ae03d9ad997b0449bd}
+      \strng{fullhash}{a4274467a0f4d9ae03d9ad997b0449bd}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{prd}
+      \field{month}{01}
+      \field{title}{{Inflationary universe: A possible solution to the horizon and flatness problems}}
+      \field{volume}{23}
+      \field{year}{1981}
+      \field{pages}{347\bibrangedash 356}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.23.347
       \endverb
     \endentry
     \entry{cite:Hubble}{article}{}
@@ -1191,6 +1271,13 @@
       \verb{eprint}
       \verb astro-ph/0209478
       \endverb
+    \endentry
+    \entry{cite:NIST}{misc}{}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://cryogenics.nist.gov}}
+      \field{title}{National Institute of Standards and Technology: Materials Measurement Laboratory - Cryogenic Technologies Group}
     \endentry
     \entry{cite:Penzias}{article}{}
       \name{author}{2}{}{%
@@ -2225,6 +2312,85 @@
       \verb 1405.0874
       \endverb
       \keyw{polarization,ISM: general,Galaxy: general,radiation mechanisms: general,submillimeter: ISM,infrared: ISM,radiation,mechanisms: general}
+    \endentry
+    \entry{cite:planckmap}{article}{}
+      \name{author}{11}{}{%
+        {{hash=94c122bef4a4d18cc4b21919b02952ac}{%
+           family={{Planck\bibnamedelimb Collaboration}},
+           family_i={P\bibinitperiod}}}%
+        {{hash=b9d0553f72a7945440b25fb81c9d5330}{%
+           family={{Adam}},
+           family_i={A\bibinitperiod},
+           given={R.},
+           given_i={R\bibinitperiod}}}%
+        {{hash=5bbe5c2607c6ff76dbad114739ce99f1}{%
+           family={{Ade}},
+           family_i={A\bibinitperiod},
+           given={P.\bibnamedelimi A.\bibnamedelimi R.},
+           given_i={P\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=721d87272201fd063e5e7046d6c8bf94}{%
+           family={{Aghanim}},
+           family_i={A\bibinitperiod},
+           given={N.},
+           given_i={N\bibinitperiod}}}%
+        {{hash=a1530ca93c2235e38bf16eafbbbbd69b}{%
+           family={{Arnaud}},
+           family_i={A\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=bb67d1311be76bc1b0eddfa4fb1cce1b}{%
+           family={{Ashdown}},
+           family_i={A\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=44a055505848eaaeaff8af943265d124}{%
+           family={{Aumont}},
+           family_i={A\bibinitperiod},
+           given={J.},
+           given_i={J\bibinitperiod}}}%
+        {{hash=c59e9913edf77f66e8319258d823f86c}{%
+           family={{Baccigalupi}},
+           family_i={B\bibinitperiod},
+           given={C.},
+           given_i={C\bibinitperiod}}}%
+        {{hash=bd656e3cd85f42dc7deef2dfc6ad43a8}{%
+           family={{Banday}},
+           family_i={B\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           given_i={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=45033002e240c2819426dc98230a7fb2}{%
+           family={{Barreiro}},
+           family_i={B\bibinitperiod},
+           given={R.\bibnamedelimi B.},
+           given_i={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=a6f71317d170c3d8fdf0ecfd3bda1b6b}{%
+           prefix={et},
+           prefix_i={e\bibinitperiod},
+           family={al.},
+           family_i={a\bibinitperiod}}}%
+      }
+      \strng{namehash}{1051df95ca7e49ec4b6876a591137642}
+      \strng{fullhash}{e9a9ba7a1aed45e30e1e8be1e9354d7a}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{A8}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{aap}
+      \field{month}{09}
+      \field{title}{{Planck 2015 results. VIII. High Frequency Instrument data processing: Calibration and maps}}
+      \field{volume}{594}
+      \field{year}{2016}
+      \field{pages}{A8}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1051/0004-6361/201525820
+      \endverb
+      \verb{eprint}
+      \verb 1502.01587
+      \endverb
+      \keyw{cosmology: observations,cosmic background radiation,surveys,methods: data analysis}
     \endentry
     \entry{PlanckXX}{article}{}
       \name{author}{11}{}{%
