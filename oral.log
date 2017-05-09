@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.27)  7 MAY 2017 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.2.27)  8 MAY 2017 23:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -488,75 +488,75 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<planck_map.pdf, id=13, page=9, 597.50829pt x 845.0471pt>
+<planck_map.pdf, id=14, page=9, 597.50829pt x 845.0471pt>
 File: planck_map.pdf Graphic file (type pdf)
 
 <use planck_map.pdf, page 9>
-Package pdftex.def Info: planck_map.pdf, page9 used on input line 109.
+Package pdftex.def Info: planck_map.pdf, page9 used on input line 105.
 (pdftex.def)             Requested size: 187.89914pt x 113.89345pt.
- <temp_aps.pdf, id=15, 668.4975pt x 365.365pt>
+ <temp_aps.pdf, id=16, 668.4975pt x 365.365pt>
 File: temp_aps.pdf Graphic file (type pdf)
 
 <use temp_aps.pdf>
-Package pdftex.def Info: temp_aps.pdf used on input line 110.
+Package pdftex.def Info: temp_aps.pdf used on input line 106.
 (pdftex.def)             Requested size: 187.89914pt x 102.69733pt.
  [3 <./planck_map.pdf> <./temp_aps.pdf>] [4]
-<theory_aps.pdf, id=119, 672.5125pt x 371.3875pt>
+<theory_aps.pdf, id=120, 672.5125pt x 371.3875pt>
 File: theory_aps.pdf Graphic file (type pdf)
  <use theory_aps.pdf>
-Package pdftex.def Info: theory_aps.pdf used on input line 239.
+Package pdftex.def Info: theory_aps.pdf used on input line 234.
 (pdftex.def)             Requested size: 375.80544pt x 207.53355pt.
- [5 <./theory_aps.pdf>] <planck2015XXfig54.pdf, id=138, 573.82379pt x 309.3156p
+ [5 <./theory_aps.pdf>] <planck2015XXfig54.pdf, id=139, 573.82379pt x 309.3156p
 t>
 File: planck2015XXfig54.pdf Graphic file (type pdf)
 
 <use planck2015XXfig54.pdf>
-Package pdftex.def Info: planck2015XXfig54.pdf used on input line 270.
+Package pdftex.def Info: planck2015XXfig54.pdf used on input line 265.
 (pdftex.def)             Requested size: 573.82239pt x 309.31483pt.
- <bk14fig7.pdf, id=139, 248.17079pt x 239.64973pt>
+ <bk14fig7.pdf, id=140, 248.17079pt x 239.64973pt>
 File: bk14fig7.pdf Graphic file (type pdf)
 
 <use bk14fig7.pdf>
-Package pdftex.def Info: bk14fig7.pdf used on input line 271.
+Package pdftex.def Info: bk14fig7.pdf used on input line 266.
 (pdftex.def)             Requested size: 248.17018pt x 239.64914pt.
  [6 <./planck2015XXfig54.pdf> <./bk14fig7.pdf>]
-<bk14_vs_world.pdf, id=174, 390.45876pt x 309.155pt>
+<bk14_vs_world.pdf, id=175, 390.45876pt x 309.155pt>
 File: bk14_vs_world.pdf Graphic file (type pdf)
  <use bk14_vs_world.pdf>
-Package pdftex.def Info: bk14_vs_world.pdf used on input line 297.
+Package pdftex.def Info: bk14_vs_world.pdf used on input line 292.
 (pdftex.def)             Requested size: 328.82707pt x 260.3677pt.
 
-[7 <./bk14_vs_world.pdf>] [8] <BK_progression.png, id=188, 1204.5pt x 722.7pt>
+[7 <./bk14_vs_world.pdf>] [8] <BK_progression.png, id=189, 1204.5pt x 722.7pt>
 File: BK_progression.png Graphic file (type png)
 
 <use BK_progression.png>
-Package pdftex.def Info: BK_progression.png used on input line 370.
+Package pdftex.def Info: BK_progression.png used on input line 365.
 (pdftex.def)             Requested size: 375.80544pt x 225.47928pt.
- <noilev_bk15.pdf, id=190, 396.48125pt x 306.14375pt>
+ <noilev_bk15.pdf, id=191, 396.48125pt x 306.14375pt>
 File: noilev_bk15.pdf Graphic file (type pdf)
 
 <use noilev_bk15.pdf>
-Package pdftex.def Info: noilev_bk15.pdf used on input line 395.
+Package pdftex.def Info: noilev_bk15.pdf used on input line 390.
 (pdftex.def)             Requested size: 328.82707pt x 253.90771pt.
  [9 <./BK_progression.png>] [10 <./noilev_bk15.pdf>]
-[11] [12] <bk_projections.pdf, id=212, 601.24625pt x 427.5975pt>
+[11] [12] <bk_projections.pdf, id=213, 601.24625pt x 427.5975pt>
 File: bk_projections.pdf Graphic file (type pdf)
 
 <use bk_projections.pdf>
-Package pdftex.def Info: bk_projections.pdf used on input line 510.
+Package pdftex.def Info: bk_projections.pdf used on input line 504.
 (pdftex.def)             Requested size: 281.85587pt x 200.4554pt.
  [13] [14 <./bk_projections.pdf>] [15] [16] [17]
 <PT415RM_cc.pdf, id=238, 614.295pt x 794.97pt>
 File: PT415RM_cc.pdf Graphic file (type pdf)
  <use PT415RM_cc.pdf>
-Package pdftex.def Info: PT415RM_cc.pdf used on input line 697.
+Package pdftex.def Info: PT415RM_cc.pdf used on input line 693.
 (pdftex.def)             Requested size: 328.82707pt x 234.88025pt.
  [18 <./PT415RM_cc.pdf>] <disp_45_perp_4_shell.png, id=262, 925.95938pt x 465.2
 3813pt>
 File: disp_45_perp_4_shell.png Graphic file (type png)
 
 <use disp_45_perp_4_shell.png>
-Package pdftex.def Info: disp_45_perp_4_shell.png used on input line 733.
+Package pdftex.def Info: disp_45_perp_4_shell.png used on input line 729.
 (pdftex.def)             Requested size: 422.77664pt x 212.42197pt.
  [19 <./disp_45_perp_4_shell.png (PNG copy)>]
 [20] [21] [22] [23] (./oral.aux)
@@ -570,12 +570,12 @@ Package logreq Info: Writing requests to 'oral.run.xml'.
 ### bottom level 
 Here is how much of TeX's memory you used:
  9169 strings out of 494953
- 155194 string characters out of 6180977
- 552144 words of memory out of 5000000
+ 155220 string characters out of 6180977
+ 550275 words of memory out of 5000000
  12334 multiletter control sequences out of 15000+600000
  14519 words of font info for 56 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 44i,9n,51p,913b,3225s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,9n,51p,913b,3227s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
@@ -600,7 +600,7 @@ blic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on oral.pdf (23 pages, 2665257 bytes).
+Output written on oral.pdf (23 pages, 2666929 bytes).
 PDF statistics:
  346 PDF objects out of 1000 (max. 8388607)
  234 compressed objects within 3 object streams

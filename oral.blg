@@ -1,19 +1,19 @@
 [0] Config.pm:340> INFO - This is Biber 2.4
 [0] Config.pm:343> INFO - Logfile is 'oral.blg'
-[69] biber:287> INFO - === Sun May  7, 2017, 17:09:08
-[195] Biber.pm:348> INFO - Reading 'oral.bcf'
-[363] Biber.pm:742> INFO - Found 21 citekeys in bib section 0
-[368] Biber.pm:3151> INFO - Processing section 0
-[403] Biber.pm:3308> INFO - Looking for bibtex format file 'oralrefs.bib' for section 0
-[500] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
-[600] bibtex.pm:974> INFO - Found BibTeX data source 'oralrefs.bib'
-[1223] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1224] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1224] Biber.pm:3028> INFO - Sorting list 'nyt/global' of type 'entry' with scheme 'nyt' and locale 'en-US'
-[1224] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
-[1286] bbl.pm:519> INFO - Writing 'oral.bbl' with encoding 'ascii'
-[1583] Utils.pm:147> WARN - The entry 'cite:Einstein' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
-[1593] Utils.pm:147> WARN - The entry 'cite:Friedmann' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
-[1777] Utils.pm:147> WARN - The entry 'cite:PlanckXXII' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
-[1944] bbl.pm:615> INFO - Output to oral.bbl
-[1944] Biber.pm:109> INFO - WARNINGS: 3
+[41] biber:287> INFO - === Mon May  8, 2017, 22:32:00
+[130] Biber.pm:348> INFO - Reading 'oral.bcf'
+[272] Biber.pm:742> INFO - Found 21 citekeys in bib section 0
+[277] Biber.pm:3151> INFO - Processing section 0
+[310] Biber.pm:3308> INFO - Looking for bibtex format file 'oralrefs.bib' for section 0
+[400] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[481] bibtex.pm:974> INFO - Found BibTeX data source 'oralrefs.bib'
+[947] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[947] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[947] Biber.pm:3028> INFO - Sorting list 'none/global' of type 'entry' with scheme 'none' and locale 'en-US'
+[947] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
+[976] bbl.pm:519> INFO - Writing 'oral.bbl' with encoding 'ascii'
+[983] Utils.pm:147> WARN - The entry 'cite:Einstein' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[989] Utils.pm:147> WARN - The entry 'cite:Friedmann' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[1448] Utils.pm:147> WARN - The entry 'cite:PlanckXXII' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[1565] bbl.pm:615> INFO - Output to oral.bbl
+[1566] Biber.pm:109> INFO - WARNINGS: 3
