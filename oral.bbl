@@ -2494,6 +2494,32 @@
       \field{howpublished}{\url{http://cryogenics.nist.gov}}
       \field{title}{National Institute of Standards and Technology: Materials Measurement Laboratory - Cryogenic Technologies Group}
     \endentry
+    \entry{cite:Siegel}{book}{}
+      \name{author}{2}{}{%
+        {{hash=1cfbe2a88c2ab72aa53354da8071122f}{%
+           family={{Siegel}},
+           family_i={S\bibinitperiod},
+           given={R.},
+           given_i={R\bibinitperiod}}}%
+        {{hash=3cbebdb312e87bd975db523793efa60b}{%
+           family={{Howell}},
+           family_i={H\bibinitperiod},
+           given={J.R.},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Taylor}%
+        {Francis}%
+      }
+      \strng{namehash}{e606ad2baa3a911c1cd68c51e9122fa9}
+      \strng{fullhash}{e606ad2baa3a911c1cd68c51e9122fa9}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Thermal Radiation Heat Transfer, 4th Edition}
+      \field{year}{2002}
+    \endentry
   \endsortlist
 \endrefsection
 \endinput
